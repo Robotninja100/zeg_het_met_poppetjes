@@ -33,9 +33,14 @@ const Footer = () => {
                     <div>
                         <h4 style={{ marginBottom: '1rem' }}>Contact</h4>
                         <p style={{ opacity: 0.8, marginBottom: '0.5rem' }}>Heb je vragen? Mail gerust.</p>
-                        <a href="mailto:contact@metpoppetjes.nl" style={{ color: 'var(--color-secondary)', textDecoration: 'none', fontWeight: 'bold' }}>
-                            contact@metpoppetjes.nl
-                        </a>
+                        <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                            <a href="mailto:contact@metpoppetjes.nl" style={{ color: 'var(--color-secondary)', textDecoration: 'none', fontWeight: 'bold' }}>
+                                contact@metpoppetjes.nl
+                            </a>
+                            <a href="https://www.marktplaats.nl/u/met-poppetjes/57041140/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', textDecoration: 'none', fontSize: '0.9rem' }}>
+                                Bekijk op Marktplaats
+                            </a>
+                        </div>
                     </div>
                 </div>
 

@@ -70,10 +70,14 @@ const Home = () => {
                         background: 'var(--color-surface)',
                         padding: '1rem',
                         borderRadius: 'var(--radius-sm)',
-                        display: 'inline-block'
+                        display: 'inline-block',
+                        marginBottom: '1rem'
                     }}>
                         <strong>Duurzaam:</strong> Het zijn 2de hands Playmobil poppetjes en accessoires!
                     </div>
+                    <p style={{ marginTop: '1rem' }}>
+                        Bekijk ook mijn aanbod op <a href="https://www.marktplaats.nl/u/met-poppetjes/57041140/" target="_blank" rel="noopener noreferrer" style={{ color: 'var(--color-primary)', fontWeight: 'bold' }}>Marktplaats</a>.
+                    </p>
                 </div>
             </section>
 
