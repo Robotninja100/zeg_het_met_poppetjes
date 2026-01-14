@@ -21,11 +21,11 @@ const Home = () => {
                 padding: '0 1rem'
             }}>
                 <div className="glass-card" style={{
-                    padding: '3rem',
                     maxWidth: '800px',
                     background: 'rgba(255, 255, 255, 0.85)',
                     color: 'var(--color-dark)', // Text needs to be dark on white glass
-                    border: '1px solid rgba(255,255,255,0.9)'
+                    border: '1px solid rgba(255,255,255,0.9)',
+                    margin: '0 1rem'
                 }}>
                     <h1 className="animate-fade-in" style={{ color: 'var(--color-primary)', marginBottom: '1rem' }}>
                         Zeg het MET POPPETJES

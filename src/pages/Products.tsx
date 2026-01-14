@@ -36,19 +36,19 @@ const Products = () => {
     ];
 
     return (
-        <div className="container" style={{ padding: 'var(--spacing-md) var(--spacing-sm)' }}>
+        <div className="container">
             <h1 style={{ textAlign: 'center', color: 'var(--color-primary)', marginBottom: '3rem' }}>Poppetjes en materialen</h1>
 
             {/* Category Buttons */}
             <div style={{
                 display: 'grid',
-                gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))',
-                gap: '1rem',
+                gridTemplateColumns: 'repeat(auto-fit, minmax(130px, 1fr))',
+                gap: '0.75rem',
                 marginBottom: '4rem'
             }}>
                 {categories.map((cat) => (
                     <button key={cat.name} className="glass-card" style={{
-                        padding: '1.5rem',
+                        padding: '1rem',
                         textAlign: 'center',
                         border: '2px solid transparent',
                         cursor: 'pointer',

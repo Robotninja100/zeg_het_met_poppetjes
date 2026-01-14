@@ -2,14 +2,18 @@
 
 :root {
   /* Brand Colors extracted from Logo vibe */
-  --color-primary: #FF9F1C; /* Warm Orange */
-  --color-secondary: #2EC4B6; /* Teal/Blue */
-  --color-accent: #E71D36; /* Red/Pink */
-  --color-success: #20BF55; /* Green */
+  --color-primary: #FF9F1C;
+  /* Warm Orange */
+  --color-secondary: #2EC4B6;
+  /* Teal/Blue */
+  --color-accent: #E71D36;
+  /* Red/Pink */
+  --color-success: #20BF55;
+  /* Green */
   --color-dark: #011627;
   --color-light: #FDFFFC;
   --color-surface: #F0F3F5;
-  
+
   /* Gradations */
   --gradient-primary: linear-gradient(135deg, #FF9F1C 0%, #FFBF69 100%);
   --gradient-soft: linear-gradient(to right, #fdfbfb 0%, #ebedee 100%);
@@ -22,10 +26,10 @@
   --spacing-xl: 8rem;
 
   /* Shadows */
-  --shadow-sm: 0 4px 6px rgba(0,0,0,0.05);
-  --shadow-md: 0 10px 15px -3px rgba(0,0,0,0.1);
-  --shadow-lg: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
-  
+  --shadow-sm: 0 4px 6px rgba(0, 0, 0, 0.05);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+
   /* Radius */
   --radius-sm: 8px;
   --radius-md: 16px;
@@ -48,15 +52,30 @@ body {
 }
 
 /* Typography */
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   line-height: 1.1;
   font-weight: 700;
   margin-bottom: var(--spacing-sm);
 }
 
-h1 { font-size: 3.5rem; letter-spacing: -0.02em; }
-h2 { font-size: 2.5rem; letter-spacing: -0.01em; }
-h3 { font-size: 1.75rem; }
+h1 {
+  font-size: 3.5rem;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  font-size: 2.5rem;
+  letter-spacing: -0.01em;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
 
 /* Utilities */
 .container {
@@ -102,8 +121,15 @@ h3 { font-size: 1.75rem; }
 
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(20px); }
-  to { opacity: 1; transform: translateY(0); }
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .animate-fade-in {
@@ -117,4 +143,38 @@ h3 { font-size: 1.75rem; }
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: var(--radius-md);
   box-shadow: var(--shadow-sm);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  :root {
+    --spacing-lg: 2rem;
+    --spacing-xl: 4rem;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  h3 {
+    font-size: 1.5rem;
+  }
+
+  .glass-card {
+    padding: 1.5rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.85rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
 }
