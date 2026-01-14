@@ -21,7 +21,8 @@ const Home = () => {
                 padding: '0 1rem'
             }}>
                 <div className="glass-card" style={{
-                    maxWidth: '800px',
+                    maxWidth: '900px',
+                    width: '90%;',
                     background: 'rgba(255, 255, 255, 0.85)',
                     color: 'var(--color-dark)', // Text needs to be dark on white glass
                     border: '1px solid rgba(255,255,255,0.9)',
