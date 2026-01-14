@@ -9,7 +9,7 @@ const Home = () => {
                 position: 'relative',
                 height: '80vh',
                 minHeight: '600px',
-                background: 'linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("/images/5c1c3c6f-a9d2-4a10-b506-4e891e3fd9aa (1).avif")',
+                background: `linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("${import.meta.env.BASE_URL}images/5c1c3c6f-a9d2-4a10-b506-4e891e3fd9aa (1).avif")`,
                 backgroundSize: 'cover',
                 backgroundPosition: 'center',
                 backgroundRepeat: 'no-repeat',
@@ -89,7 +89,7 @@ const Home = () => {
                         {/* Starter Set */}
                         <div className="glass-card" style={{ padding: '2rem', textAlign: 'center', background: 'white' }}>
                             <div style={{ height: '200px', background: '#eee', marginBottom: '1.5rem', borderRadius: 'var(--radius-sm)', overflow: 'hidden' }}>
-                                <img src="/images/e260529e-6ca8-47c8-a83e-c49f66eece43.avif" alt="Starter Set" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                <img src={`${import.meta.env.BASE_URL}images/e260529e-6ca8-47c8-a83e-c49f66eece43.avif`} alt="Starter Set" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
                             <h3 style={{ color: 'var(--color-primary)' }}>Starter Set</h3>
                             <p style={{ margin: '1rem 0' }}>€10,50</p>
@@ -102,7 +102,7 @@ const Home = () => {
                                 Meest gekozen
                             </div>
                             <div style={{ height: '200px', background: '#eee', marginBottom: '1.5rem', borderRadius: 'var(--radius-sm)', overflow: 'hidden' }}>
-                                <img src="/images/80f96d0d-6b55-498e-8a7b-8ab8944f9221.avif" alt="Basis Set" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                <img src={`${import.meta.env.BASE_URL}images/80f96d0d-6b55-498e-8a7b-8ab8944f9221.avif`} alt="Basis Set" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
                             <h3 style={{ color: 'var(--color-primary)' }}>Basis Set</h3>
                             <p style={{ margin: '1rem 0' }}>€17,50</p>
@@ -112,7 +112,7 @@ const Home = () => {
                         {/* Uitgebreide Set */}
                         <div className="glass-card" style={{ padding: '2rem', textAlign: 'center', background: 'white' }}>
                             <div style={{ height: '200px', background: '#eee', marginBottom: '1.5rem', borderRadius: 'var(--radius-sm)', overflow: 'hidden' }}>
-                                <img src="/images/93905c53-b188-41ff-b261-23edfb0affdf.avif" alt="Uitgebreide Set" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
+                                <img src={`${import.meta.env.BASE_URL}images/93905c53-b188-41ff-b261-23edfb0affdf.avif`} alt="Uitgebreide Set" style={{ width: '100%', height: '100%', objectFit: 'cover' }} />
                             </div>
                             <h3 style={{ color: 'var(--color-primary)' }}>Uitgebreide Set</h3>
                             <p style={{ margin: '1rem 0' }}>€21,50</p>

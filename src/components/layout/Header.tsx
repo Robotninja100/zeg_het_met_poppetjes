@@ -33,48 +33,48 @@ const Header = () => {
       }}>
         {/* Logo */}
         <Link to="/" style={{ display: 'flex', alignItems: 'center', gap: '1rem', textDecoration: 'none' }}>
-           <img 
-            src="/images/Logo.png" 
-            alt="Met Poppetjes Logo" 
-            style={{ height: '60px', borderRadius: '50%' }} 
+          <img
+            src={`${import.meta.env.BASE_URL}images/Logo.png`}
+            alt="Met Poppetjes Logo"
+            style={{ height: '60px', borderRadius: '50%' }}
           />
           <div style={{
             display: 'flex',
             flexDirection: 'column'
           }}>
-             <span style={{ 
-               fontSize: '1.5rem', 
-               fontWeight: '700', 
-               color: 'var(--color-primary)',
-               lineHeight: 1
-             }}>MET POPPETJES</span>
+            <span style={{
+              fontSize: '1.5rem',
+              fontWeight: '700',
+              color: 'var(--color-primary)',
+              lineHeight: 1
+            }}>MET POPPETJES</span>
           </div>
         </Link>
 
         {/* Desktop Nav */}
         <nav className="desktop-nav" style={{ display: 'none' }}>
-           {/* We will use a media query in css to show this, or inline logic + width hook. 
+          {/* We will use a media query in css to show this, or inline logic + width hook. 
               For simplicity, sticking to inline styles + css class logic 
            */}
-           <ul style={{ display: 'flex', gap: '1.5rem', listStyle: 'none' }}>
-             {navItems.map((item) => (
-               <li key={item.name}>
-                 <Link 
-                  to={item.path} 
-                  style={{ 
-                    textDecoration: 'none', 
+          <ul style={{ display: 'flex', gap: '1.5rem', listStyle: 'none' }}>
+            {navItems.map((item) => (
+              <li key={item.name}>
+                <Link
+                  to={item.path}
+                  style={{
+                    textDecoration: 'none',
                     color: location.pathname === item.path ? 'var(--color-primary)' : 'var(--color-dark)',
                     fontWeight: 500,
                     fontSize: '1.1rem',
                     padding: '0.5rem 0',
                     borderBottom: location.pathname === item.path ? '2px solid var(--color-primary)' : 'none'
                   }}
-                 >
-                   {item.name}
-                 </Link>
-               </li>
-             ))}
-           </ul>
+                >
+                  {item.name}
+                </Link>
+              </li>
+            ))}
+          </ul>
         </nav>
 
         {/* Mobile Menu Toggle */}
@@ -103,11 +103,11 @@ const Header = () => {
           <ul style={{ display: 'flex', flexDirection: 'column', gap: '1.5rem', listStyle: 'none', textAlign: 'center' }}>
             {navItems.map((item) => (
               <li key={item.name}>
-                <Link 
-                  to={item.path} 
+                <Link
+                  to={item.path}
                   onClick={() => setIsMenuOpen(false)}
-                  style={{ 
-                    textDecoration: 'none', 
+                  style={{
+                    textDecoration: 'none',
                     color: 'var(--color-dark)',
                     fontSize: '1.2rem',
                     fontWeight: '600'

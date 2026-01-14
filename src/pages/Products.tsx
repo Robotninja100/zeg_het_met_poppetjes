@@ -18,20 +18,20 @@ const Products = () => {
             title: 'Starter set',
             price: '€10,50',
             description: 'Set met 7 poppetjes met verschillende leeftijden en uiterlijk (4 volwassenen, 2 kinderen en 1 baby).',
-            image: '/images/e260529e-6ca8-47c8-a83e-c49f66eece43.avif'
+            image: `${import.meta.env.BASE_URL}images/e260529e-6ca8-47c8-a83e-c49f66eece43.avif`
         },
         {
             title: 'Basis set',
             price: '€17,50',
             description: 'Set met 12 poppetjes met verschillende leeftijden en uiterlijk (6 volwassenen, 4 kinderen en 2 baby’s).',
-            image: '/images/80f96d0d-6b55-498e-8a7b-8ab8944f9221.avif',
+            image: `${import.meta.env.BASE_URL}images/80f96d0d-6b55-498e-8a7b-8ab8944f9221.avif`,
             highlight: true
         },
         {
             title: 'Uitgebreide set',
             price: '€21,50',
             description: 'Set met 14 poppetjes met verschillende leeftijden en uiterlijk (opa & oma, 6 volwassenen, 4 kinderen en 2 baby’s, incl. hoofdeksels en accessoires).',
-            image: '/images/93905c53-b188-41ff-b261-23edfb0affdf.avif'
+            image: `${import.meta.env.BASE_URL}images/93905c53-b188-41ff-b261-23edfb0affdf.avif`
         }
     ];
 
